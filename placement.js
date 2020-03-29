@@ -2,7 +2,6 @@ window.onload = () => {
   placeCursor(); 
 };
   
-  
   function placeCursor() 
   { 
     const raycaster = document.querySelector('[ar-raycaster]');
