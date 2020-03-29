@@ -1,9 +1,9 @@
 window.onload = () => {
-  onSceneLoaded(); 
+  placeCursor(); 
 };
   
   
-  function onSceneLoaded() 
+  function placeCursor() 
   { 
     const raycaster = document.querySelector('[ar-raycaster]');
     const cursor = document.querySelector('#cursor');
@@ -12,5 +12,10 @@ window.onload = () => {
     });
   }
 
+  window.unload = () => {
+    clearInterval(t);
+  };
+
   const scene = document.querySelector('a-scene');
   scene.addEventListener('loaded', onSceneLoaded);
+  myVar = setInterval(placeCursor, 3000);
