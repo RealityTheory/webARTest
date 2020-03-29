@@ -1,4 +1,8 @@
-
+window.onload = () => {
+  onSceneLoaded(); 
+};
+  
+  
   function onSceneLoaded() 
   { 
     const raycaster = document.querySelector('[ar-raycaster]');
